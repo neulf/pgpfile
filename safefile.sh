@@ -1,6 +1,6 @@
 # Usage : EncryptionBatch <Folder> <Recipient>
 
-for i in `ls $1 | sed "s:^:$1/:"`
+for i in `find $1 -name "*.*" ! -name "*.gpg" ! -name "."`
 do
     sudo gpg -r $2 -e $i
 done
