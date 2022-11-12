@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Usage : DecryptionBatch <Folder>
 
 # for i in `ls`
